@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <title>Premier League - One | Stop</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="imgs/main%20logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="js/moment.js"></script>
+        <script src="js/moment-timezone.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body style="background-color: #0d0106;color: white">
+        <!//navbar//>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #d8ff00" id="navid">
+          <a class="navbar-brand" style="margin-left: 10px">One<img src="imgs/empty-set-mathematical-symbol.svg" style="width: 20px;margin-left: 5px;margin-right: 5px">Stop</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="livescore.html">Live Scores</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!//logo and title//>
+        <div class="title" style="margin-left: 30px; margin-top: 70px">
+            <div class="logo" style="border-radius: 120px;background-color: white;width: 120px;">
+                <img src="imgs/pl%20logo.jpg"style="width:120px;object-fit: cover;padding:10px">
+                </div>
+            <div>
+                <p style="margin-bottom: 0px;margin-top: 10px">COMPETITION</p>
+                <h3>Premier League</h3>
+            </div>    
+        </div>
+        <!//nav-tab//>
+        <nav style="margin-top: 10px; margin-left: 30px;">
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="nav-link active" id="fix-tab" data-toggle="tab" href="#fixtures" role="tab" aria-controls="nav-home" aria-selected="true" onclick="PL_fixture()" style="color: #d8ff00;background-color: #fff0;border-color: #e2e2e200 #dee2e600 #d8ff00;">Fixtures</a>
+                <a class="nav-link" id="stand-tab" data-toggle="tab" href="#tables" role="tab" aria-controls="nav-profile" aria-selected="false" onclick="PL_stand()" style="color: #d8ff00;background-color: #fff0;border-color: #e2e2e200 #dee2e600 #d8ff00;">Table</a>
+                <a class="nav-link" id="results-tab" data-toggle="tab" href="#results" role="tab" aria-controls="nav-contact" aria-selected="false" onclick="PL_results()" style="color: #d8ff00;background-color: #fff0;border-color: #e2e2e200 #dee2e600 #d8ff00;">Results</a>
+            </div>
+        </nav>
+        <!//content//>
+        <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="fixtures" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <section>
+                        <div class="container-fluid mt-5 mb-5 p-2">
+                        <div class="sub-container p-2">
+                        <div class="row" id="fix_data">
+                        </div>
+                        </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="tab-pane fade" id="tables" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <section>
+                     <div class="conatiner mt-5 ml-2 mr-2 p-2">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="table-responsive">
+
+                                    <table class="table" id=tbval style="color: white">
+                                        <thead>
+                                            <tr>
+                                                <th>Pos</th>
+                                                <th></th>
+                                                <th>Name</th>
+                                                <th>PL</th>
+                                                <th>W</th>
+                                                <th>D</th>
+                                                <th>L</th>
+                                                <th>GF</th>
+                                                <th>GA</th>
+                                                <th>GD</th>
+                                                <th>PTS</th>
+                                           </tr>
+                                           </thead>
+                                           <tbody>
+                                            <tr>
+                                                <td>POS</td>
+                                                <td></td>
+                                                <td>Name</td>
+                                                <td>PL</td>
+                                                <td>W</td>
+                                                <td>D</td>
+                                                <td>L</td>
+                                                <td>GF</td>
+                                                <td>GA</td>
+                                                <td>GD</td>
+                                                <td>PTS</td>
+                                           </tr>
+                                           </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </section>    
+                </div>
+                <div class="tab-pane fade" id="results" role="tabpanel" aria-labelledby="nav-contact-tab">
+                    <section>
+                        <div class="container-fluid mt-5 mb-5 p-2">
+                            <div class="sub-container p-2">
+                                <div class="row" id="results_data">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        <!//footer//>
+        <footer class="mt-5" style="margin-bottom: 0px!important; background-color: #1a1a1a;position: fixed;left: 0;bottom: 0;width: 100%;text-align: center;">
+            <div class="footer_style text-center pt-2">
+                <p>Copyright © 2020 All rights reserved | Made By Saurabh Maity</p>
+            </div>
+        </footer>
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+                integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+                crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+    </body>
+</html>
