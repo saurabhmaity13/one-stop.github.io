@@ -1055,13 +1055,14 @@ function PL_goalscorer(){
             
             x.insertCell(1);
             
-            tbvalue.rows[i+1].cells[1].innerHTML=response['scorers'][i]['team']['name'];
+            tbvalue.rows[i+1].cells[1].innerHTML=response['scorers'][i]['player']['name'];
         
             x.insertCell(2);
-            tbvalue.rows[i+1].cells[2].innerHTML=response['scorers'][i]['player']['name'];
+            tbvalue.rows[i+1].cells[2].innerHTML=response['scorers'][i]['numberOfGoals'];
             
             x.insertCell(3);
-            tbvalue.rows[i+1].cells[3].innerHTML=response['scorers'][i]['numberOfGoals'];
+            
+            tbvalue.rows[i+1].cells[3].innerHTML=response['scorers'][i]['team']['name'];
         
         }
         console.log(response);
@@ -1077,7 +1078,7 @@ function BL1_goalscorer(){
         }).done(function(response) {
         // do something with the response, e.g. isolate the id of a linked resource
         for(var i=0;i<5;i++){
-            var x= tbvalue.insertRow();
+             var x= tbvalue.insertRow();
         
             x.insertCell(0);
             tbvalue.rows[i+1].cells[0].innerHTML=i+1;
@@ -1085,13 +1086,14 @@ function BL1_goalscorer(){
             
             x.insertCell(1);
             
-            tbvalue.rows[i+1].cells[1].innerHTML=response['scorers'][i]['team']['name'];
+            tbvalue.rows[i+1].cells[1].innerHTML=response['scorers'][i]['player']['name'];
         
             x.insertCell(2);
-            tbvalue.rows[i+1].cells[2].innerHTML=response['scorers'][i]['player']['name'];
+            tbvalue.rows[i+1].cells[2].innerHTML=response['scorers'][i]['numberOfGoals'];
             
             x.insertCell(3);
-            tbvalue.rows[i+1].cells[3].innerHTML=response['scorers'][i]['numberOfGoals'];
+            
+            tbvalue.rows[i+1].cells[3].innerHTML=response['scorers'][i]['team']['name'];
         
         }
         console.log(response);
@@ -1107,7 +1109,7 @@ function SA_goalscorer(){
         }).done(function(response) {
         // do something with the response, e.g. isolate the id of a linked resource
         for(var i=0;i<5;i++){
-            var x= tbvalue.insertRow();
+             var x= tbvalue.insertRow();
         
             x.insertCell(0);
             tbvalue.rows[i+1].cells[0].innerHTML=i+1;
@@ -1115,13 +1117,14 @@ function SA_goalscorer(){
             
             x.insertCell(1);
             
-            tbvalue.rows[i+1].cells[1].innerHTML=response['scorers'][i]['team']['name'];
+            tbvalue.rows[i+1].cells[1].innerHTML=response['scorers'][i]['player']['name'];
         
             x.insertCell(2);
-            tbvalue.rows[i+1].cells[2].innerHTML=response['scorers'][i]['player']['name'];
+            tbvalue.rows[i+1].cells[2].innerHTML=response['scorers'][i]['numberOfGoals'];
             
             x.insertCell(3);
-            tbvalue.rows[i+1].cells[3].innerHTML=response['scorers'][i]['numberOfGoals'];
+            
+            tbvalue.rows[i+1].cells[3].innerHTML=response['scorers'][i]['team']['name'];
         
         }
         console.log(response);
@@ -1137,7 +1140,7 @@ function FL1_goalscorer(){
         }).done(function(response) {
         // do something with the response, e.g. isolate the id of a linked resource
         for(var i=0;i<5;i++){
-            var x= tbvalue.insertRow();
+             var x= tbvalue.insertRow();
         
             x.insertCell(0);
             tbvalue.rows[i+1].cells[0].innerHTML=i+1;
@@ -1145,13 +1148,14 @@ function FL1_goalscorer(){
             
             x.insertCell(1);
             
-            tbvalue.rows[i+1].cells[1].innerHTML=response['scorers'][i]['team']['name'];
+            tbvalue.rows[i+1].cells[1].innerHTML=response['scorers'][i]['player']['name'];
         
             x.insertCell(2);
-            tbvalue.rows[i+1].cells[2].innerHTML=response['scorers'][i]['player']['name'];
+            tbvalue.rows[i+1].cells[2].innerHTML=response['scorers'][i]['numberOfGoals'];
             
             x.insertCell(3);
-            tbvalue.rows[i+1].cells[3].innerHTML=response['scorers'][i]['numberOfGoals'];
+            
+            tbvalue.rows[i+1].cells[3].innerHTML=response['scorers'][i]['team']['name'];
         
         }
         console.log(response);
@@ -1167,7 +1171,7 @@ function PD_goalscorer(){
         }).done(function(response) {
         // do something with the response, e.g. isolate the id of a linked resource
         for(var i=0;i<5;i++){
-            var x= tbvalue.insertRow();
+             var x= tbvalue.insertRow();
         
             x.insertCell(0);
             tbvalue.rows[i+1].cells[0].innerHTML=i+1;
@@ -1175,13 +1179,14 @@ function PD_goalscorer(){
             
             x.insertCell(1);
             
-            tbvalue.rows[i+1].cells[1].innerHTML=response['scorers'][i]['team']['name'];
+            tbvalue.rows[i+1].cells[1].innerHTML=response['scorers'][i]['player']['name'];
         
             x.insertCell(2);
-            tbvalue.rows[i+1].cells[2].innerHTML=response['scorers'][i]['player']['name'];
+            tbvalue.rows[i+1].cells[2].innerHTML=response['scorers'][i]['numberOfGoals'];
             
             x.insertCell(3);
-            tbvalue.rows[i+1].cells[3].innerHTML=response['scorers'][i]['numberOfGoals'];
+            
+            tbvalue.rows[i+1].cells[3].innerHTML=response['scorers'][i]['team']['name'];
         
         }
         console.log(response);
@@ -1197,7 +1202,7 @@ function DED_goalscorer(){
         }).done(function(response) {
         // do something with the response, e.g. isolate the id of a linked resource
         for(var i=0;i<5;i++){
-            var x= tbvalue.insertRow();
+             var x= tbvalue.insertRow();
         
             x.insertCell(0);
             tbvalue.rows[i+1].cells[0].innerHTML=i+1;
@@ -1205,13 +1210,14 @@ function DED_goalscorer(){
             
             x.insertCell(1);
             
-            tbvalue.rows[i+1].cells[1].innerHTML=response['scorers'][i]['team']['name'];
+            tbvalue.rows[i+1].cells[1].innerHTML=response['scorers'][i]['player']['name'];
         
             x.insertCell(2);
-            tbvalue.rows[i+1].cells[2].innerHTML=response['scorers'][i]['player']['name'];
+            tbvalue.rows[i+1].cells[2].innerHTML=response['scorers'][i]['numberOfGoals'];
             
             x.insertCell(3);
-            tbvalue.rows[i+1].cells[3].innerHTML=response['scorers'][i]['numberOfGoals'];
+            
+            tbvalue.rows[i+1].cells[3].innerHTML=response['scorers'][i]['team']['name'];
         
         }
         console.log(response);
