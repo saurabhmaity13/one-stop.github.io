@@ -544,8 +544,8 @@ function FL1_fixture(){
 		var m = date.getMonth() + 1;
 		var y = date.getFullYear();
 		var datefrom = y + '-' + (m <= 9 ? '0' + m : m) + '-' + (d <= 9 ? '0' + d : d);
-        var date = new Date()+7; // M-D-YYYY
-		var d = date.getDate();
+        var date = new Date(); // M-D-YYYY
+		var d = date.getDate()+7;
 		var m = date.getMonth() + 1;
 		var y = date.getFullYear();
 		var dateto = y + '-' + (m <= 9 ? '0' + m : m) + '-' + (d <= 9 ? '0' + d : d);
