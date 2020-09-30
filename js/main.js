@@ -60,10 +60,15 @@ function PL_fixture(){
 		var d = date.getDate();
 		var m = date.getMonth() + 1;
 		var y = date.getFullYear();
-		var dateString = y + '-' + (m <= 9 ? '0' + m : m) + '-' + (d <= 9 ? '0' + d : d);
+		var datefrom = y + '-' + (m <= 9 ? '0' + m : m) + '-' + (d <= 9 ? '0' + d : d);
+        var date = new Date(); // M-D-YYYY
+		var d = date.getDate()+7;
+		var m = date.getMonth() + 1;
+		var y = date.getFullYear();
+		var dateto = y + '-' + (m <= 9 ? '0' + m : m) + '-' + (d <= 9 ? '0' + d : d);
         $.ajax({
         headers: { 'X-Auth-Token': '9334c8572b2d4286a38896e125b52a48' },
-        url: 'https://api.football-data.org/v2/competitions/PL/matches?dateFrom='+dateString+'&dateTo=2021-05-23',
+        url: 'https://api.football-data.org/v2/competitions/PL/matches?dateFrom='+datefrom+'&dateTo='+dateto,
         dataType: 'json',
         type: 'GET',
         }).done(function(response) {
@@ -216,10 +221,15 @@ function BL1_fixture(){
 		var d = date.getDate();
 		var m = date.getMonth() + 1;
 		var y = date.getFullYear();
-		var dateString = y + '-' + (m <= 9 ? '0' + m : m) + '-' + (d <= 9 ? '0' + d : d);
+		var datefrom = y + '-' + (m <= 9 ? '0' + m : m) + '-' + (d <= 9 ? '0' + d : d);
+        var date = new Date(); // M-D-YYYY
+		var d = date.getDate()+7;
+		var m = date.getMonth() + 1;
+		var y = date.getFullYear();
+		var dateto = y + '-' + (m <= 9 ? '0' + m : m) + '-' + (d <= 9 ? '0' + d : d);
         $.ajax({
         headers: { 'X-Auth-Token': '9334c8572b2d4286a38896e125b52a48' },
-        url: 'https://api.football-data.org/v2/competitions/BL1/matches?dateFrom='+dateString+'&dateTo=2021-05-15',
+        url: 'https://api.football-data.org/v2/competitions/BL1/matches?dateFrom='+datefrom+'&dateTo='+dateto,
         dataType: 'json',
         type: 'GET',
         }).done(function(response) {
@@ -372,10 +382,15 @@ function SA_fixture(){
 		var d = date.getDate();
 		var m = date.getMonth() + 1;
 		var y = date.getFullYear();
-		var dateString = y + '-' + (m <= 9 ? '0' + m : m) + '-' + (d <= 9 ? '0' + d : d);
+		var datefrom = y + '-' + (m <= 9 ? '0' + m : m) + '-' + (d <= 9 ? '0' + d : d);
+        var date = new Date(); // M-D-YYYY
+		var d = date.getDate()+7;
+		var m = date.getMonth() + 1;
+		var y = date.getFullYear();
+		var dateto = y + '-' + (m <= 9 ? '0' + m : m) + '-' + (d <= 9 ? '0' + d : d);
         $.ajax({
         headers: { 'X-Auth-Token': '9334c8572b2d4286a38896e125b52a48' },
-        url: 'https://api.football-data.org/v2/competitions/SA/matches?dateFrom='+dateString+'&dateTo=2021-05-23',
+        url: 'https://api.football-data.org/v2/competitions/SA/matches?dateFrom='+datefrom+'&dateTo='+dateto,
         dataType: 'json',
         type: 'GET',
         }).done(function(response) {
@@ -528,10 +543,15 @@ function FL1_fixture(){
 		var d = date.getDate();
 		var m = date.getMonth() + 1;
 		var y = date.getFullYear();
-		var dateString = y + '-' + (m <= 9 ? '0' + m : m) + '-' + (d <= 9 ? '0' + d : d);
+		var datefrom = y + '-' + (m <= 9 ? '0' + m : m) + '-' + (d <= 9 ? '0' + d : d);
+        var date = new Date()+7; // M-D-YYYY
+		var d = date.getDate();
+		var m = date.getMonth() + 1;
+		var y = date.getFullYear();
+		var dateto = y + '-' + (m <= 9 ? '0' + m : m) + '-' + (d <= 9 ? '0' + d : d);
         $.ajax({
         headers: { 'X-Auth-Token': '9334c8572b2d4286a38896e125b52a48' },
-        url: 'https://api.football-data.org/v2/competitions/FL1/matches?dateFrom='+dateString+'&dateTo=2021-05-23',
+        url: 'https://api.football-data.org/v2/competitions/FL1/matches?dateFrom='+datefrom+'&dateTo='+dateto,
         dataType: 'json',
         type: 'GET',
         }).done(function(response) {
@@ -684,10 +704,15 @@ function PD_fixture(){
 		var d = date.getDate();
 		var m = date.getMonth() + 1;
 		var y = date.getFullYear();
-		var dateString = y + '-' + (m <= 9 ? '0' + m : m) + '-' + (d <= 9 ? '0' + d : d);
+		var datefrom = y + '-' + (m <= 9 ? '0' + m : m) + '-' + (d <= 9 ? '0' + d : d);
+        var date = new Date(); // M-D-YYYY
+		var d = date.getDate()+7;
+		var m = date.getMonth() + 1;
+		var y = date.getFullYear();
+		var dateto = y + '-' + (m <= 9 ? '0' + m : m) + '-' + (d <= 9 ? '0' + d : d);
         $.ajax({
         headers: { 'X-Auth-Token': '9334c8572b2d4286a38896e125b52a48' },
-        url: 'https://api.football-data.org/v2/competitions/PD/matches?dateFrom='+dateString+'&dateTo=2021-05-23',
+        url: 'https://api.football-data.org/v2/competitions/PD/matches?dateFrom='+datefrom+'&dateTo='+dateto,
         dataType: 'json',
         type: 'GET',
         }).done(function(response) {
@@ -840,10 +865,15 @@ function DED_fixture(){
 		var d = date.getDate();
 		var m = date.getMonth() + 1;
 		var y = date.getFullYear();
-		var dateString = y + '-' + (m <= 9 ? '0' + m : m) + '-' + (d <= 9 ? '0' + d : d);
+		var datefrom = y + '-' + (m <= 9 ? '0' + m : m) + '-' + (d <= 9 ? '0' + d : d);
+        var date = new Date(); // M-D-YYYY
+		var d = date.getDate()+7;
+		var m = date.getMonth() + 1;
+		var y = date.getFullYear();
+		var dateto = y + '-' + (m <= 9 ? '0' + m : m) + '-' + (d <= 9 ? '0' + d : d);
         $.ajax({
         headers: { 'X-Auth-Token': '9334c8572b2d4286a38896e125b52a48' },
-        url: 'https://api.football-data.org/v2/competitions/DED/matches?dateFrom='+dateString+'&dateTo=2021-05-16',
+        url: 'https://api.football-data.org/v2/competitions/DED/matches?dateFrom='+datefrom+'&dateTo='+dateto,
         dataType: 'json',
         type: 'GET',
         }).done(function(response) {
@@ -994,7 +1024,7 @@ function livescores(){
         
         
         }else{
-            output+=`<div class="col" style="padding-top:10px;text-       align:center;border: 1px solid #d8ff00;background-color:rgba(0,0,0,.05)">
+            output+=`<div class="col" style="padding-top:10px;text-align:center;border: 1px solid #d8ff00;background-color:rgba(0,0,0,.05)">
                     <div class="row">
                         <div class="col-12">
                         <h6>No Live matches going on right now. Check out the fixtures of respective leagues.</h6>
@@ -1008,5 +1038,182 @@ function livescores(){
         });
 }
 
+function PL_goalscorer(){
+    $.ajax({
+        headers: { 'X-Auth-Token': '9334c8572b2d4286a38896e125b52a48' },
+        url: 'https://api.football-data.org/v2/competitions/PL/scorers?limit=5',
+        dataType: 'json',
+        type: 'GET',
+        }).done(function(response) {
+        // do something with the response, e.g. isolate the id of a linked resource
+        for(var i=0;i<5;i++){
+            var x= tbvalue.insertRow();
+        
+            x.insertCell(0);
+            tbvalue.rows[i+1].cells[0].innerHTML=i+1;
+            tbvalue.rows[i+1].cells[0].style.align="center";
+            
+            x.insertCell(1);
+            
+            tbvalue.rows[i+1].cells[1].innerHTML=response['scorers'][i]['team']['name'];
+        
+            x.insertCell(2);
+            tbvalue.rows[i+1].cells[2].innerHTML=response['scorers'][i]['player']['name'];
+            
+            x.insertCell(3);
+            tbvalue.rows[i+1].cells[3].innerHTML=response['scorers'][i]['numberOfGoals'];
+        
+        }
+        console.log(response);
+        });
+}
 
+function BL1_goalscorer(){
+    $.ajax({
+        headers: { 'X-Auth-Token': '9334c8572b2d4286a38896e125b52a48' },
+        url: 'https://api.football-data.org/v2/competitions/BL1/scorers?limit=5',
+        dataType: 'json',
+        type: 'GET',
+        }).done(function(response) {
+        // do something with the response, e.g. isolate the id of a linked resource
+        for(var i=0;i<5;i++){
+            var x= tbvalue.insertRow();
+        
+            x.insertCell(0);
+            tbvalue.rows[i+1].cells[0].innerHTML=i+1;
+            tbvalue.rows[i+1].cells[0].style.align="center";
+            
+            x.insertCell(1);
+            
+            tbvalue.rows[i+1].cells[1].innerHTML=response['scorers'][i]['team']['name'];
+        
+            x.insertCell(2);
+            tbvalue.rows[i+1].cells[2].innerHTML=response['scorers'][i]['player']['name'];
+            
+            x.insertCell(3);
+            tbvalue.rows[i+1].cells[3].innerHTML=response['scorers'][i]['numberOfGoals'];
+        
+        }
+        console.log(response);
+        });
+}
 
+function SA_goalscorer(){
+    $.ajax({
+        headers: { 'X-Auth-Token': '9334c8572b2d4286a38896e125b52a48' },
+        url: 'https://api.football-data.org/v2/competitions/SA/scorers?limit=5',
+        dataType: 'json',
+        type: 'GET',
+        }).done(function(response) {
+        // do something with the response, e.g. isolate the id of a linked resource
+        for(var i=0;i<5;i++){
+            var x= tbvalue.insertRow();
+        
+            x.insertCell(0);
+            tbvalue.rows[i+1].cells[0].innerHTML=i+1;
+            tbvalue.rows[i+1].cells[0].style.align="center";
+            
+            x.insertCell(1);
+            
+            tbvalue.rows[i+1].cells[1].innerHTML=response['scorers'][i]['team']['name'];
+        
+            x.insertCell(2);
+            tbvalue.rows[i+1].cells[2].innerHTML=response['scorers'][i]['player']['name'];
+            
+            x.insertCell(3);
+            tbvalue.rows[i+1].cells[3].innerHTML=response['scorers'][i]['numberOfGoals'];
+        
+        }
+        console.log(response);
+        });
+}
+
+function FL1_goalscorer(){
+    $.ajax({
+        headers: { 'X-Auth-Token': '9334c8572b2d4286a38896e125b52a48' },
+        url: 'https://api.football-data.org/v2/competitions/FL1/scorers?limit=5',
+        dataType: 'json',
+        type: 'GET',
+        }).done(function(response) {
+        // do something with the response, e.g. isolate the id of a linked resource
+        for(var i=0;i<5;i++){
+            var x= tbvalue.insertRow();
+        
+            x.insertCell(0);
+            tbvalue.rows[i+1].cells[0].innerHTML=i+1;
+            tbvalue.rows[i+1].cells[0].style.align="center";
+            
+            x.insertCell(1);
+            
+            tbvalue.rows[i+1].cells[1].innerHTML=response['scorers'][i]['team']['name'];
+        
+            x.insertCell(2);
+            tbvalue.rows[i+1].cells[2].innerHTML=response['scorers'][i]['player']['name'];
+            
+            x.insertCell(3);
+            tbvalue.rows[i+1].cells[3].innerHTML=response['scorers'][i]['numberOfGoals'];
+        
+        }
+        console.log(response);
+        });
+}
+
+function PD_goalscorer(){
+    $.ajax({
+        headers: { 'X-Auth-Token': '9334c8572b2d4286a38896e125b52a48' },
+        url: 'https://api.football-data.org/v2/competitions/PD/scorers?limit=5',
+        dataType: 'json',
+        type: 'GET',
+        }).done(function(response) {
+        // do something with the response, e.g. isolate the id of a linked resource
+        for(var i=0;i<5;i++){
+            var x= tbvalue.insertRow();
+        
+            x.insertCell(0);
+            tbvalue.rows[i+1].cells[0].innerHTML=i+1;
+            tbvalue.rows[i+1].cells[0].style.align="center";
+            
+            x.insertCell(1);
+            
+            tbvalue.rows[i+1].cells[1].innerHTML=response['scorers'][i]['team']['name'];
+        
+            x.insertCell(2);
+            tbvalue.rows[i+1].cells[2].innerHTML=response['scorers'][i]['player']['name'];
+            
+            x.insertCell(3);
+            tbvalue.rows[i+1].cells[3].innerHTML=response['scorers'][i]['numberOfGoals'];
+        
+        }
+        console.log(response);
+        });
+}
+
+function DED_goalscorer(){
+    $.ajax({
+        headers: { 'X-Auth-Token': '9334c8572b2d4286a38896e125b52a48' },
+        url: 'https://api.football-data.org/v2/competitions/DED/scorers?limit=5',
+        dataType: 'json',
+        type: 'GET',
+        }).done(function(response) {
+        // do something with the response, e.g. isolate the id of a linked resource
+        for(var i=0;i<5;i++){
+            var x= tbvalue.insertRow();
+        
+            x.insertCell(0);
+            tbvalue.rows[i+1].cells[0].innerHTML=i+1;
+            tbvalue.rows[i+1].cells[0].style.align="center";
+            
+            x.insertCell(1);
+            
+            tbvalue.rows[i+1].cells[1].innerHTML=response['scorers'][i]['team']['name'];
+        
+            x.insertCell(2);
+            tbvalue.rows[i+1].cells[2].innerHTML=response['scorers'][i]['player']['name'];
+            
+            x.insertCell(3);
+            tbvalue.rows[i+1].cells[3].innerHTML=response['scorers'][i]['numberOfGoals'];
+        
+        }
+        console.log(response);
+        });
+}

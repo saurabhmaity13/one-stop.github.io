@@ -54,3 +54,9 @@ html{
     display:none;
   }
 }
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {*/
+    color: #d8ff00;
+    background-color: #ffffff3d;
+    border-color: #e2e2e200 #dee2e600 #d8ff00;
+}

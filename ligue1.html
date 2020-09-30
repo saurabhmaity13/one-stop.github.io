@@ -46,9 +46,10 @@
         <!//nav-tab//>
         <nav style="margin-top: 10px; margin-left: 30px;">
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <a class="nav-link active" id="fix-tab" data-toggle="tab" href="#fixtures" role="tab" aria-controls="nav-home" aria-selected="true" onclick="FL1_fixture()" style="color: #d8ff00;background-color: #fff0;border-color: #e2e2e200 #dee2e600 #d8ff00;">Fixtures</a>
-                <a class="nav-link" id="stand-tab" data-toggle="tab" href="#tables" role="tab" aria-controls="nav-profile" aria-selected="false" onclick="FL1_stand()" style="color: #d8ff00;background-color: #fff0;border-color: #e2e2e200 #dee2e600 #d8ff00;">Table</a>
-                <a class="nav-link" id="results-tab" data-toggle="tab" href="#results" role="tab" aria-controls="nav-contact" aria-selected="false" onclick="FL1_results()" style="color: #d8ff00;background-color: #fff0;border-color: #e2e2e200 #dee2e600 #d8ff00;">Results</a>
+                <a class="nav-link active" id="fix-tab" data-toggle="tab" href="#fixtures" role="tab" aria-controls="nav-home" aria-selected="true" onclick="FL1_fixture()" style="color: #d8ff00;">Fixtures</a>
+                <a class="nav-link" id="stand-tab" data-toggle="tab" href="#tables" role="tab" aria-controls="nav-profile" aria-selected="false" onclick="FL1_stand()" style="color: #d8ff00;">Table</a>
+                <a class="nav-link" id="results-tab" data-toggle="tab" href="#results" role="tab" aria-controls="nav-contact" aria-selected="false" onclick="FL1_results()" style="color: #d8ff00;">Results</a>
+                <a class="nav-link" id="results-tab" data-toggle="tab" href="#goalscorer" role="tab" aria-controls="nav-contact" aria-selected="false" onclick="FL1_goalscorer()" style="color: #d8ff00;">Goal Scorer</a>
             </div>
         </nav>
         <!//content//>
@@ -117,6 +118,37 @@
                             </div>
                         </div>
                     </section>
+                </div>
+                <div class="tab-pane fade" id="goalscorer" role="tabpanel" aria-labelledby="nav-contact-tab">
+                    <section>
+                     <div class="conatiner mt-5 ml-2 mr-2 mb-5 p-2">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="table-responsive">
+                                    <p style="margin-left: 5px">Rotate the screen for full details</p>
+                                    <table class="table" id=tbvalue style="color: white">
+                                        <thead>
+                                            <tr>
+                                                <th>Pos</th>
+                                                <th>Team</th>
+                                                <th>Player</th>
+                                                <th>Goals</th>
+                                           </tr>
+                                           </thead>
+                                           <tbody>
+                                            <tr>
+                                                <td>POS</td>
+                                                <td>Team</td>
+                                                <td>Player</td>
+                                                <td>Goals</td>
+                                           </tr>
+                                           </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </section>    
                 </div>
             </div>
         <!//footer//>
