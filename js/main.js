@@ -115,7 +115,7 @@ function PL_stand(){
         type: 'GET',
         }).done(function(response) {
         // do something with the response, e.g. isolate the id of a linked resource
-        for(var i=0;i<19;i++){
+        for(var i=0;i<20;i++){
             var x= tbval.insertRow();
         
             x.insertCell(0);
@@ -437,7 +437,7 @@ function SA_stand(){
         type: 'GET',
         }).done(function(response) {
         // do something with the response, e.g. isolate the id of a linked resource
-        for(var i=0;i<19;i++){
+        for(var i=0;i<20;i++){
             var x= tbval.insertRow();
         
             x.insertCell(0);
@@ -545,7 +545,7 @@ function FL1_fixture(){
 		var y = date.getFullYear();
 		var datefrom = y + '-' + (m <= 9 ? '0' + m : m) + '-' + (d <= 9 ? '0' + d : d);
         var date = new Date(); // M-D-YYYY
-		var d = date.getDate()+7;
+		var d = date.getDate()+6;
 		var m = date.getMonth() + 1;
 		var y = date.getFullYear();
 		var dateto = y + '-' + (m <= 9 ? '0' + m : m) + '-' + (d <= 9 ? '0' + d : d);
@@ -598,7 +598,7 @@ function FL1_stand(){
         type: 'GET',
         }).done(function(response) {
         // do something with the response, e.g. isolate the id of a linked resource
-        for(var i=0;i<19;i++){
+        for(var i=0;i<20;i++){
             var x= tbval.insertRow();
         
             x.insertCell(0);
@@ -759,7 +759,7 @@ function PD_stand(){
         type: 'GET',
         }).done(function(response) {
         // do something with the response, e.g. isolate the id of a linked resource
-        for(var i=0;i<19;i++){
+        for(var i=0;i<20;i++){
             var x= tbval.insertRow();
         
             x.insertCell(0);
