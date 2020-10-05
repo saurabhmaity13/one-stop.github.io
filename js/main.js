@@ -74,7 +74,8 @@ function PL_fixture(){
         }).done(function(response) {
         // do something with the response, e.g. isolate the id of a linked resource
         let output = " ";
-        for(var i=0;i<(response['matches'].length);i++){
+        if(response['count']!=0){
+            for(var i=0;i<(response['matches'].length);i++){
             
             output += `
                 <div class="col-sm-12 col-md-6 col-lg-4" style="padding-top:10px;text-align:center;border: 1px solid #d8ff00;background-color:rgba(0,0,0,.05)">
@@ -101,6 +102,17 @@ function PL_fixture(){
                 `;
             $("#fix_data").html(output);
         
+        }
+        }
+        else{
+            output+=`<div class="col" style="padding-top:10px;text-align:center;border: 1px solid #d8ff00;background-color:rgba(0,0,0,.05)">
+                    <div class="row">
+                        <div class="col-12">
+                        <h6>No fixtures today. Check again tomorrow</h6>
+                        </div>
+                    </div>
+                    </div>`;
+                $("#fix_data").html(output);
         }
     
         console.log(response);
@@ -235,7 +247,8 @@ function BL1_fixture(){
         }).done(function(response) {
         // do something with the response, e.g. isolate the id of a linked resource
         let output = " ";
-        for(var i=0;i<(response['matches'].length);i++){
+        if(response['count']!=0){
+            for(var i=0;i<(response['matches'].length);i++){
             
             output += `
                 <div class="col-sm-12 col-md-6 col-lg-4" style="padding-top:10px;text-align:center;border: 1px solid #d8ff00;background-color:rgba(0,0,0,.05)">
@@ -262,6 +275,17 @@ function BL1_fixture(){
                 `;
             $("#fix_data").html(output);
         
+        }
+        }
+        else{
+            output+=`<div class="col" style="padding-top:10px;text-align:center;border: 1px solid #d8ff00;background-color:rgba(0,0,0,.05)">
+                    <div class="row">
+                        <div class="col-12">
+                        <h6>No fixtures today. Check again tomorrow</h6>
+                        </div>
+                    </div>
+                    </div>`;
+                $("#fix_data").html(output);
         }
     
         console.log(response);
@@ -396,7 +420,8 @@ function SA_fixture(){
         }).done(function(response) {
         // do something with the response, e.g. isolate the id of a linked resource
         let output = " ";
-        for(var i=0;i<(response['matches'].length);i++){
+        if(response['count']!=0){
+            for(var i=0;i<(response['matches'].length);i++){
             
             output += `
                 <div class="col-sm-12 col-md-6 col-lg-4" style="padding-top:10px;text-align:center;border: 1px solid #d8ff00;background-color:rgba(0,0,0,.05)">
@@ -423,6 +448,17 @@ function SA_fixture(){
                 `;
             $("#fix_data").html(output);
         
+        }
+        }
+        else{
+            output+=`<div class="col" style="padding-top:10px;text-align:center;border: 1px solid #d8ff00;background-color:rgba(0,0,0,.05)">
+                    <div class="row">
+                        <div class="col-12">
+                        <h6>No fixtures today. Check again tomorrow</h6>
+                        </div>
+                    </div>
+                    </div>`;
+                $("#fix_data").html(output);
         }
     
         console.log(response);
@@ -557,7 +593,8 @@ function FL1_fixture(){
         }).done(function(response) {
         // do something with the response, e.g. isolate the id of a linked resource
         let output = " ";
-        for(var i=0;i<(response['matches'].length);i++){
+        if(response['count']!=0){
+            for(var i=0;i<(response['matches'].length);i++){
             
             output += `
                 <div class="col-sm-12 col-md-6 col-lg-4" style="padding-top:10px;text-align:center;border: 1px solid #d8ff00;background-color:rgba(0,0,0,.05)">
@@ -584,6 +621,17 @@ function FL1_fixture(){
                 `;
             $("#fix_data").html(output);
         
+        }
+        }
+        else{
+            output+=`<div class="col" style="padding-top:10px;text-align:center;border: 1px solid #d8ff00;background-color:rgba(0,0,0,.05)">
+                    <div class="row">
+                        <div class="col-12">
+                        <h6>No fixtures today. Check again tomorrow</h6>
+                        </div>
+                    </div>
+                    </div>`;
+                $("#fix_data").html(output);
         }
     
         console.log(response);
@@ -718,7 +766,8 @@ function PD_fixture(){
         }).done(function(response) {
         // do something with the response, e.g. isolate the id of a linked resource
         let output = " ";
-        for(var i=0;i<(response['matches'].length);i++){
+        if(response['count']!=0){
+            for(var i=0;i<(response['matches'].length);i++){
             
             output += `
                 <div class="col-sm-12 col-md-6 col-lg-4" style="padding-top:10px;text-align:center;border: 1px solid #d8ff00;background-color:rgba(0,0,0,.05)">
@@ -746,7 +795,17 @@ function PD_fixture(){
             $("#fix_data").html(output);
         
         }
-    
+        }
+        else{
+            output+=`<div class="col" style="padding-top:10px;text-align:center;border: 1px solid #d8ff00;background-color:rgba(0,0,0,.05)">
+                    <div class="row">
+                        <div class="col-12">
+                        <h6>No fixtures today. Check again tomorrow</h6>
+                        </div>
+                    </div>
+                    </div>`;
+                $("#fix_data").html(output);
+        }
         console.log(response);
         });
 }
@@ -879,7 +938,8 @@ function DED_fixture(){
         }).done(function(response) {
         // do something with the response, e.g. isolate the id of a linked resource
         let output = " ";
-        for(var i=0;i<(response['matches'].length);i++){
+        if(response['count']!=0){
+            for(var i=0;i<(response['matches'].length);i++){
             
             output += `
                 <div class="col-sm-12 col-md-6 col-lg-4" style="padding-top:10px;text-align:center;border: 1px solid #d8ff00;background-color:rgba(0,0,0,.05)">
@@ -906,6 +966,17 @@ function DED_fixture(){
                 `;
             $("#fix_data").html(output);
         
+        }
+        }
+        else{
+            output+=`<div class="col" style="padding-top:10px;text-align:center;border: 1px solid #d8ff00;background-color:rgba(0,0,0,.05)">
+                    <div class="row">
+                        <div class="col-12">
+                        <h6>No fixtures today. Check again tomorrow</h6>
+                        </div>
+                    </div>
+                    </div>`;
+                $("#fix_data").html(output);
         }
     
         console.log(response);
